@@ -2,23 +2,47 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>겨울방학 SW장기집중교육</title>
+<title>HTML 문서 기초</title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+h2, b{color:blue; font-family: 'Nanum Pen Script', cursive;}
+p{color:red;}
+#iron_man{color:rgb(150, 50, 20); font-size:20pt}
+table {
+	font-family: 'Nanum Pen Script', cursive;
+	border-top: 3px solid;
+	border-bottom: 1px solid;
+	border-left: hidden;
+	border-right: hidden;
+	border-collapse: collapse;
+}
+td, th {
+	border-top: 1px solid;
+	border-right: 1px solid;
+}
+
+tr:nth-child(even){background-color:#F0F8FF;}
+#iron_man{color:rgb(150, 50, 20); font-size:20pt}
+
+</style>
 </head>
 <body>
 <center><img src="../img/marvel_cinematic_universe.png" alt="마블 시네마틱 유니버스"/></center>
 <p>마블 스튜디오에서 제작하는 슈퍼히어로 프랜차이즈 세계관</p>
 
 <audio controls autoplay loop src="../resource/2021_marvel_intro.mp3">
-
-</audio>
+</audio><br>
+<video controls src="../resource/2021_marvel_intro_video.mp4" width=500 height=200>
+지원하지 않는 브라우저입니다.
+</video>
 <ol type = "I">
 <h2><li>[요약]</li></h2>
 <ul>
 <li><b>장르</b>: 슈퍼히어로, 액션, SF, 어드벤쳐</li>
 <li><b>제작사</b>: <img src="../img/marvel_studios.png" alt="마블 시네마" width=100, height=20></li>
 <li><b>소유자</b>: 월트 디즈니 컴퍼니</li>
-<li><b>첫 작품</b>: 아이언맨(2008년)</li>
-<li><b>최근 작품</b>: 호크아이(2021년, 드라마) / 스파이더맨: 노 웨이 홈(2021년, 영화)</li>
+<li><b>첫 작품</b>: <a href="#iron_man">아이언맨(2008년)</a></li>
+<li><b>최근 작품</b>: 호크아이(2021년, 드라마) / <a href="#sp_no">스파이더맨: 노 웨이 홈(2021년, 영화)</a></li>
 <li><b>예정 작품</b>: 닥터 스트레인지: 대혼돈의 멀티버스</li>
 <li><b>링크</b>: <a href="https://www.marvel.com/movies" target="_parent">마블 스튜디오 공식 홈페이지</a></li>
 </ul>
@@ -29,7 +53,7 @@
 <tr><th>구분</th><th>제목 및 원제</th>
 <th>형식</th><th>공개연도</th></tr>
 <tr><th rowspan="7">페이즈 1</th>
-<tr><td>Iron Man</td><td>영화</td><td>2008</td></tr>
+<tr><td><a id="iron_man">Iron Man</a></td><td>영화</td><td>2008</td></tr>
 <tr><td>Incredible Hulk</td><td>영화</td><td>2008</td></tr>
 <tr><td>Iron Man 2</td><td>영화</td><td>2010</td></tr>
 <tr><td>Thor</td><td>영화</td><td>2011</td></tr>
@@ -60,10 +84,10 @@
 <tr><td>Loki: Season One</td><td>드라마</td><td>2021</td></tr>
 <tr><td>Black Widow</td><td>영화</td><td>2021</td></tr>
 <tr><td>What If...?: Season One</td><td>드라마</td><td>2021</td></tr>
-<tr><td>Shang-Chi and the Legend of the Ten Rings/td><td>영화</td><td>2021</td></tr>
+<tr><td>Shang-Chi and the Legend of the Ten Rings<td>영화</td><td>2021</td></tr>
 <tr><td>Eternals</td><td>영화</td><td>2021</td></tr>
 <tr><td>Hawkeye</td><td>드라마</td><td>2021</td></tr>
-<tr><td>Spider Man: No Way Home</td><td>영화</td><td>2021</td></tr>
+<tr><td><a id="sp_no">Spider-Man: No Way Home</a></td><td>영화</td><td>2021</td></tr>
 </table>
 </ol>
 </body>
